@@ -1,5 +1,5 @@
-# Habittracer
-  <!DOCTYPE html>
+//# Habittracer
+ /*  <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -164,3 +164,4 @@
 </body>
 </html>
           
+*/
