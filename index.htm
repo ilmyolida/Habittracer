@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Привычки Pro</title>
     <meta name="description" content="Privacy Policy for Привычки Pro - Habit Tracker & Finance Manager">
-    <meta name="theme-color" content="#1a1a2e">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -63,7 +62,6 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(20px);
             background-color: var(--header-bg);
             border-bottom: 1px solid var(--border-color);
             padding: 1rem 0;
@@ -298,6 +296,19 @@
         a:hover {
             text-decoration: underline;
         }
+        .lang-btn:focus, .theme-btn:focus, .email-delete-btn:focus {
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+        .lang-btn {
+            cursor: pointer;
+        }
+        .theme-btn {
+            cursor: pointer;
+        }
+        .email-delete-btn {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="light-theme">
@@ -305,7 +316,7 @@
         <div class="header-container">
             <div class="logo-area">
                 <div class="logo-icon">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
                 </div>
                 <div class="logo-text">
                     <h1>Привычки Pro</h1>
@@ -313,14 +324,14 @@
                 </div>
             </div>
             <div class="controls">
-                <button class="lang-btn active" data-lang="en">
-                    <i class="fas fa-globe"></i> English
+                <button class="lang-btn active" data-lang="en" title="Switch to English">
+                    <i class="fas fa-globe" aria-hidden="true"></i> English
                 </button>
-                <button class="lang-btn" data-lang="ru">
-                    <i class="fas fa-language"></i> Русский
+                <button class="lang-btn" data-lang="ru" title="Переключить на русский">
+                    <i class="fas fa-language" aria-hidden="true"></i> Русский
                 </button>
-                <button class="theme-btn" id="themeToggle">
-                    <i class="fas fa-moon"></i>
+                <button class="theme-btn" id="themeToggle" title="Dark / Light mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -330,7 +341,7 @@
         <div class="hero">
             <h2 id="heroTitle">Privacy Policy</h2>
             <div class="last-updated">
-                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
                 <span id="lastUpdatedText">Last Updated: May 15, 2026</span>
             </div>
         </div>
@@ -339,7 +350,7 @@
             <!-- ENGLISH VERSION -->
             <div id="en-content">
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-info-circle"></i> 1. Information Collection and Use</div>
+                    <div class="section-title"><i class="fas fa-info-circle" aria-hidden="true"></i> 1. Information Collection and Use</div>
                     <p>To provide a seamless experience across multiple devices, Привычки Pro ("we", "our", or "the App") collects several different types of information for various purposes:</p>
                     <ul>
                         <li><strong>Personal Authentication Data:</strong> When you register or log in using Email or SMS, we collect your email address or phone number. This data is used solely to identify your account and secure your access.</li>
@@ -349,54 +360,54 @@
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-shield-alt"></i> 2. Service Providers and Third-Party Data</div>
+                    <div class="section-title"><i class="fas fa-shield-alt" aria-hidden="true"></i> 2. Service Providers and Third-Party Data</div>
                     <p>We employ third-party companies to facilitate our Service and provide the Service on our behalf:</p>
                     <ul>
                         <li><strong>Google Firebase (Database & Auth):</strong> We use Firebase for secure cloud storage and user authentication. Firebase handles your data with high-level encryption both during transit and at rest.</li>
-                        <li><strong>Google AdMob (Advertising):</strong> The App uses AdMob to display advertisements. AdMob may collect and use your Advertising ID to personalize ads and analyze ad performance. AdMob's privacy policy can be found at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</li>
+                        <li><strong>Google AdMob (Advertising):</strong> The App uses AdMob to display advertisements. AdMob may collect and use your Advertising ID to personalize ads and analyze ad performance. AdMob's privacy policy can be found at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</li>
                         <li><strong>Google Play Services:</strong> Used for app stability, updates, and integrated features.</li>
                     </ul>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-database"></i> 3. Data Storage and Security</div>
+                    <div class="section-title"><i class="fas fa-database" aria-hidden="true"></i> 3. Data Storage and Security</div>
                     <p><strong>Cloud Security:</strong> By using Firebase, your data is protected by Google's industry-leading security infrastructure.</p>
                     <p><strong>Local Storage:</strong> For your convenience, a cached version of your data may be stored locally on your device to allow offline access.</p>
                     <p><strong>User Control:</strong> You have full control over your data. You can edit or delete your habit and financial records at any time within the App.</p>
                     <div class="highlight-box">
-                        <i class="fas fa-lock"></i> We implement strict security measures to prevent unauthorized access, disclosure, or destruction of your personal information.
+                        <i class="fas fa-lock" aria-hidden="true"></i> We implement strict security measures to prevent unauthorized access, disclosure, or destruction of your personal information.
                     </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-file-export"></i> 4. Data Export and Portability</div>
+                    <div class="section-title"><i class="fas fa-file-export" aria-hidden="true"></i> 4. Data Export and Portability</div>
                     <p>We believe you should own your data. Привычки Pro provides built-in tools for:</p>
                     <div class="data-export-badges">
-                        <span class="badge"><i class="fas fa-file-pdf"></i> PDF Export – Generate detailed progress reports</span>
-                        <span class="badge"><i class="fas fa-file-csv"></i> CSV Export – Excel-compatible files for backup/analysis</span>
+                        <span class="badge"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF Export – Generate detailed progress reports</span>
+                        <span class="badge"><i class="fas fa-file-csv" aria-hidden="true"></i> CSV Export – Excel-compatible files for backup/analysis</span>
                     </div>
                     <p>You can export your complete habit history and financial ledger at any time without any restrictions.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-trash-alt"></i> 5. Account Deletion and Data Removal</div>
+                    <div class="section-title"><i class="fas fa-trash-alt" aria-hidden="true"></i> 5. Account Deletion and Data Removal</div>
                     <p>You have the right to delete your account and all associated data at any time. Привычки Pro provides the following methods to permanently delete your account from Google Firebase:</p>
                     <ul>
                         <li><strong>Method 1 - Within the App:</strong> Go to Settings → Account → Delete Account → Confirm Deletion. This will immediately and permanently remove all your habits, financial records, reminders, and personal data from our Firebase servers. This action is irreversible.</li>
                         <li><strong>Method 2 - Email Request:</strong> Click the button below or send an email to <strong>safemediaosupport@gmail.com</strong> with the subject line "DELETE MY ACCOUNT" and include your registered email address or phone number. We will process your request within 7 business days.</li>
                     </ul>
                     <div class="text-center">
-                        <a href="mailto:safemediaosupport@gmail.com?subject=DELETE%20MY%20ACCOUNT%20-%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8%20Pro&body=Dear%20Support%20Team%2C%0A%0APlease%20permanently%20delete%20my%20account%20and%20all%20associated%20data%20from%20Google%20Firebase.%0A%0AMy%20registered%20email%3A%20%5BENTER%20YOUR%20EMAIL%5D%0AMy%20phone%20number%20(if%20used)%3A%20%5BENTER%20YOUR%20PHONE%5D%0A%0AThank%20you." class="email-delete-btn">
-                            <i class="fas fa-envelope"></i> Request Account Deletion via Email
+                        <a href="mailto:safemediaosupport@gmail.com?subject=DELETE%20MY%20ACCOUNT%20-%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8%20Pro&body=Dear%20Support%20Team%2C%0A%0APlease%20permanently%20delete%20my%20account%20and%20all%20associated%20data%20from%20Google%20Firebase.%0A%0AMy%20registered%20email%3A%20%5BENTER%20YOUR%20EMAIL%5D%0AMy%20phone%20number%20(if%20used)%3A%20%5BENTER%20YOUR%20PHONE%5D%0A%0AThank%20you." class="email-delete-btn" target="_blank" rel="noopener noreferrer" title="Click to open email client and request account deletion">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Request Account Deletion via Email
                         </a>
                     </div>
                     <div class="highlight-box">
-                        <i class="fas fa-exclamation-triangle"></i> <strong>What gets deleted:</strong> All habits, progress history, reminders, financial transactions (income/expenses), account credentials (email/phone), and any personal information associated with your account. Upon account deletion, all your data is permanently erased from Google Firebase and cannot be recovered. No backup copies are retained.
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i> <strong>What gets deleted:</strong> All habits, progress history, reminders, financial transactions (income/expenses), account credentials (email/phone), and any personal information associated with your account. Upon account deletion, all your data is permanently erased from Google Firebase and cannot be recovered. No backup copies are retained.
                     </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-ad"></i> 6. Advertising (Google AdMob)</div>
+                    <div class="section-title"><i class="fas fa-ad" aria-hidden="true"></i> 6. Advertising (Google AdMob)</div>
                     <p>Привычки Pro uses Google AdMob to display advertisements. AdMob may collect the following data:</p>
                     <ul>
                         <li>Advertising ID (AAID on Android) – used to serve personalized or non-personalized ads</li>
@@ -405,11 +416,11 @@
                         <li>App usage data related to ad interactions</li>
                     </ul>
                     <p>You can opt out of personalized advertising by adjusting your device settings: Settings → Google → Ads → Opt out of Ads Personalization. You can also reset your Advertising ID at any time.</p>
-                    <p>For more information about how Google processes your data, please visit <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Policy</a>.</p>
+                    <p>For more information about how Google processes your data, please visit <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google's Advertising Policy</a>.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-credit-card"></i> 7. Subscriptions and In-App Purchases</div>
+                    <div class="section-title"><i class="fas fa-credit-card" aria-hidden="true"></i> 7. Subscriptions and In-App Purchases</div>
                     <p>Привычки Pro may offer premium features through subscriptions or one-time purchases. Please note:</p>
                     <ul>
                         <li>All payments are processed through <strong>Google Play Store</strong> – we do not directly collect or store any payment information (credit card details, billing addresses, etc.)</li>
@@ -419,144 +430,116 @@
                         <li>We do not store any transaction details on our servers; all purchase information is managed by Google</li>
                     </ul>
                     <div class="highlight-box">
-                        <i class="fas fa-info-circle"></i> <strong>Subscription Cancellation:</strong> To cancel a subscription, go to Google Play Store → Menu → Subscriptions → Select Привычки Pro → Cancel Subscription. Deleting your app account will not cancel your subscription.
+                        <i class="fas fa-info-circle" aria-hidden="true"></i> <strong>Subscription Cancellation:</strong> To cancel a subscription, go to Google Play Store → Menu → Subscriptions → Select Привычки Pro → Cancel Subscription. Deleting your app account will not cancel your subscription.
                     </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-child"></i> 8. Children's Privacy</div>
+                    <div class="section-title"><i class="fas fa-child" aria-hidden="true"></i> 8. Children's Privacy</div>
                     <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us immediately.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-exchange-alt"></i> 9. Changes to This Privacy Policy</div>
+                    <div class="section-title"><i class="fas fa-exchange-alt" aria-hidden="true"></i> 9. Changes to This Privacy Policy</div>
                     <p>We may update our Privacy Policy from time to time as we introduce new features like advanced analytics or social sharing. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes. Changes are effective immediately upon posting.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-envelope"></i> 10. Contact Us</div>
+                    <div class="section-title"><i class="fas fa-envelope" aria-hidden="true"></i> 10. Contact Us</div>
                     <p>If you have any questions about this Privacy Policy, advertising, subscriptions, or wish to request the deletion of your account and data, please contact us:</p>
                     <div class="contact-card">
-                        <div><i class="fas fa-user"></i> <strong>Developer:</strong> Abdiganikadirov</div>
-                        <div><i class="fas fa-envelope"></i> <strong>Email:</strong> safemediaosupport@gmail.com</div>
-                        <div><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Osh, Kyrgyzstan</div>
+                        <div><i class="fas fa-user" aria-hidden="true"></i> <strong>Developer:</strong> Abdiganikadirov</div>
+                        <div><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> safemediaosupport@gmail.com</div>
+                        <div><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Location:</strong> Osh, Kyrgyzstan</div>
                     </div>
                     <div class="text-center" style="margin-top: 1rem;">
-                        <a href="mailto:safemediaosupport@gmail.com" class="email-delete-btn" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
-                            <i class="fas fa-paper-plane"></i> Send us an Email
+                        <a href="mailto:safemediaosupport@gmail.com" class="email-delete-btn" style="background: linear-gradient(135deg, #3b82f6, #2563eb);" target="_blank" rel="noopener noreferrer" title="Click to open email client and contact us">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send us an Email
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- RUSSIAN VERSION -->
+            <!-- RUSSIAN VERSION (same structure) -->
             <div id="ru-content" style="display: none;">
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-info-circle"></i> 1. Сбор и использование информации</div>
+                    <div class="section-title"><i class="fas fa-info-circle" aria-hidden="true"></i> 1. Сбор и использование информации</div>
                     <p>Чтобы обеспечить бесперебойную работу на нескольких устройствах, Привычки Pro ("мы", "наш" или "Приложение") собирает несколько различных типов информации для различных целей:</p>
                     <ul>
-                        <li><strong>Персональные данные аутентификации:</strong> Когда вы регистрируетесь или входите в систему с помощью электронной почты или SMS, мы собираем ваш адрес электронной почты или номер телефона. Эти данные используются исключительно для идентификации вашей учетной записи и обеспечения безопасности доступа.</li>
-                        <li><strong>Пользовательские данные (облачная синхронизация):</strong> Ваши привычки, ежедневный прогресс, напоминания и финансовые записи (доходы/расходы) загружаются и хранятся в Google Firebase. Это обеспечивает синхронизацию в реальном времени, позволяя вам получать доступ к вашим последним данным с любого устройства, войдя в свою учетную запись.</li>
-                        <li><strong>Информация об устройстве и использовании:</strong> Мы можем собирать базовую информацию о вашем мобильном устройстве, такую как модель, версия ОС и уникальные идентификаторы устройства для оптимизации производительности приложения.</li>
+                        <li><strong>Персональные данные аутентификации:</strong> Когда вы регистрируетесь или входите в систему с помощью электронной почты или SMS, мы собираем ваш адрес электронной почты или номер телефона.</li>
+                        <li><strong>Пользовательские данные (облачная синхронизация):</strong> Ваши привычки, ежедневный прогресс, напоминания и финансовые записи загружаются и хранятся в Google Firebase.</li>
+                        <li><strong>Информация об устройстве:</strong> Модель, версия ОС, уникальные идентификаторы устройства.</li>
                     </ul>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-shield-alt"></i> 2. Поставщики услуг и сторонние данные</div>
-                    <p>Мы привлекаем сторонние компании для предоставления нашего Сервиса:</p>
+                    <div class="section-title"><i class="fas fa-shield-alt" aria-hidden="true"></i> 2. Поставщики услуг</div>
                     <ul>
-                        <li><strong>Google Firebase (база данных и аутентификация):</strong> Мы используем Firebase для безопасного облачного хранения и аутентификации пользователей. Firebase обрабатывает ваши данные с высоким уровнем шифрования как при передаче, так и в состоянии покоя.</li>
-                        <li><strong>Google AdMob (реклама):</strong> Приложение использует AdMob для показа рекламы. AdMob может собирать и использовать ваш рекламный идентификатор для персонализации рекламы и анализа эффективности. Политика конфиденциальности AdMob доступна по адресу <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</li>
-                        <li><strong>Google Play Services:</strong> Используется для стабильности приложения, обновлений и интеграции функций.</li>
+                        <li><strong>Google Firebase:</strong> Хранение данных и аутентификация</li>
+                        <li><strong>Google AdMob:</strong> Реклама. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Политика конфиденциальности AdMob</a></li>
+                        <li><strong>Google Play Services:</strong> Стабильность и обновления</li>
                     </ul>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-database"></i> 3. Хранение и безопасность данных</div>
-                    <p><strong>Облачная безопасность:</strong> Благодаря использованию Firebase ваши данные защищены ведущей инфраструктурой безопасности Google.</p>
-                    <p><strong>Локальное хранилище:</strong> Для вашего удобства кэшированная версия ваших данных может храниться локально на вашем устройстве для обеспечения автономного доступа.</p>
-                    <p><strong>Контроль пользователя:</strong> Вы имеете полный контроль над своими данными. Вы можете редактировать или удалять свои привычки и финансовые записи в любое время в Приложении.</p>
+                    <div class="section-title"><i class="fas fa-database" aria-hidden="true"></i> 3. Хранение и безопасность данных</div>
+                    <p>Firebase обеспечивает высокий уровень шифрования. Вы имеете полный контроль над своими данными.</p>
                     <div class="highlight-box">
-                        <i class="fas fa-lock"></i> Мы внедряем строгие меры безопасности для предотвращения несанкционированного доступа, раскрытия или уничтожения вашей личной информации.
+                        <i class="fas fa-lock" aria-hidden="true"></i> Строгие меры безопасности для защиты вашей информации.
                     </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-file-export"></i> 4. Экспорт и переносимость данных</div>
-                    <p>Мы считаем, что вы должны владеть своими данными. Привычки Pro предоставляет встроенные инструменты для:</p>
+                    <div class="section-title"><i class="fas fa-file-export" aria-hidden="true"></i> 4. Экспорт данных</div>
                     <div class="data-export-badges">
-                        <span class="badge"><i class="fas fa-file-pdf"></i> PDF Экспорт – Создание детальных отчетов о прогрессе</span>
-                        <span class="badge"><i class="fas fa-file-csv"></i> CSV Экспорт – Файлы, совместимые с Excel для резервного копирования</span>
+                        <span class="badge"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF Экспорт</span>
+                        <span class="badge"><i class="fas fa-file-csv" aria-hidden="true"></i> CSV Экспорт</span>
                     </div>
-                    <p>Вы можете экспортировать полную историю привычек и финансовую книгу в любое время без ограничений.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-trash-alt"></i> 5. Удаление учетной записи и данных</div>
-                    <p>Вы имеете право удалить свою учетную запись и все связанные с ней данные в любое время. Привычки Pro предоставляет следующие способы для постоянного удаления вашей учетной записи из Google Firebase:</p>
+                    <div class="section-title"><i class="fas fa-trash-alt" aria-hidden="true"></i> 5. Удаление аккаунта</div>
                     <ul>
-                        <li><strong>Способ 1 - Внутри приложения:</strong> Перейдите в Настройки → Аккаунт → Удалить аккаунт → Подтвердите удаление. Это немедленно и безвозвратно удалит все ваши привычки, финансовые записи, напоминания и личные данные с наших серверов Firebase. Это действие необратимо.</li>
-                        <li><strong>Способ 2 - Запрос по электронной почте:</strong> Нажмите на кнопку ниже или отправьте письмо на <strong>safemediaosupport@gmail.com</strong> с темой "УДАЛИТЬ МОЙ АККАУНТ" и укажите свой адрес электронной почты или номер телефона. Мы обработаем ваш запрос в течение 7 рабочих дней.</li>
+                        <li><strong>Способ 1 - В приложении:</strong> Настройки → Аккаунт → Удалить аккаунт</li>
+                        <li><strong>Способ 2 - Email:</strong> Напишите на safemediaosupport@gmail.com с темой "УДАЛИТЬ МОЙ АККАУНТ"</li>
                     </ul>
                     <div class="text-center">
-                        <a href="mailto:safemediaosupport@gmail.com?subject=DELETE%20MY%20ACCOUNT%20-%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8%20Pro&body=Dear%20Support%20Team%2C%0A%0APlease%20permanently%20delete%20my%20account%20and%20all%20associated%20data%20from%20Google%20Firebase.%0A%0AMy%20registered%20email%3A%20%5BENTER%20YOUR%20EMAIL%5D%0AMy%20phone%20number%20(if%20used)%3A%20%5BENTER%20YOUR%20PHONE%5D%0A%0AThank%20you." class="email-delete-btn">
-                            <i class="fas fa-envelope"></i> Запросить удаление аккаунта по Email
+                        <a href="mailto:safemediaosupport@gmail.com?subject=DELETE%20MY%20ACCOUNT%20-%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8%20Pro&body=Please%20delete%20my%20account" class="email-delete-btn" target="_blank" rel="noopener noreferrer" title="Отправить запрос на удаление аккаунта">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Запросить удаление аккаунта
                         </a>
                     </div>
-                    <div class="highlight-box">
-                        <i class="fas fa-exclamation-triangle"></i> <strong>Что удаляется:</strong> Все привычки, история прогресса, напоминания, финансовые операции (доходы/расходы), учетные данные и любая личная информация. После удаления все данные полностью стираются из Google Firebase и не могут быть восстановлены. Резервные копии не сохраняются.
-                    </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-ad"></i> 6. Реклама (Google AdMob)</div>
-                    <p>Привычки Pro использует Google AdMob для показа рекламы. AdMob может собирать следующие данные:</p>
-                    <ul>
-                        <li>Рекламный идентификатор (AAID на Android) – используется для показа персонализированной или неперсонализированной рекламы</li>
-                        <li>Информация об устройстве (модель, версия ОС, размер экрана)</li>
-                        <li>IP-адрес (анонимизированный)</li>
-                        <li>Данные об использовании приложения, связанные с взаимодействием с рекламой</li>
-                    </ul>
-                    <p>Вы можете отказаться от персонализированной рекламы, настроив параметры устройства: Настройки → Google → Реклама → Отказ от персонализации рекламы. Вы также можете сбросить свой рекламный идентификатор в любое время.</p>
-                    <p>Для получения дополнительной информации о том, как Google обрабатывает ваши данные, посетите <a href="https://policies.google.com/technologies/ads" target="_blank">Политику рекламы Google</a>.</p>
+                    <div class="section-title"><i class="fas fa-ad" aria-hidden="true"></i> 6. Реклама (Google AdMob)</div>
+                    <p>AdMob собирает рекламный ID, информацию об устройстве, IP-адрес. Вы можете отключить персонализированную рекламу в настройках устройства.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-credit-card"></i> 7. Подписки и покупки в приложении</div>
-                    <p>Привычки Pro может предлагать премиум-функции через подписки или разовые покупки. Обратите внимание:</p>
-                    <ul>
-                        <li>Все платежи обрабатываются через <strong>Google Play Store</strong> – мы не собираем и не храним никакую платежную информацию (данные кредитной карты, платежные адреса и т.д.)</li>
-                        <li>Управление подписками (включая отмену) должно осуществляться через ваш аккаунт Google Play Store: Play Store → Подписки → Привычки Pro → Отменить подписку</li>
-                        <li>Удаление учетной записи приложения НЕ отменяет автоматически ваши активные подписки. Вы должны отменить их отдельно через Google Play Store</li>
-                        <li>Возвраты средств обрабатываются исключительно Google Play Store в соответствии с их политикой возврата</li>
-                        <li>Мы не храним никаких деталей транзакций на наших серверах; вся информация о покупках управляется Google</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <i class="fas fa-info-circle"></i> <strong>Отмена подписки:</strong> Чтобы отменить подписку, перейдите в Google Play Store → Меню → Подписки → Выберите Привычки Pro → Отменить подписку. Удаление учетной записи приложения не отменяет подписку.
-                    </div>
+                    <div class="section-title"><i class="fas fa-credit-card" aria-hidden="true"></i> 7. Подписки</div>
+                    <p>Все платежи через Google Play Store. Удаление аккаунта не отменяет подписку автоматически. Отменяйте подписку через Play Store.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-child"></i> 8. Конфиденциальность детей</div>
-                    <p>Наш Сервис не предназначен для лиц младше 13 лет. Мы сознательно не собираем личную информацию от детей. Если вы родитель или опекун и вам известно, что ваш ребенок предоставил нам персональные данные, пожалуйста, свяжитесь с нами.</p>
+                    <div class="section-title"><i class="fas fa-child" aria-hidden="true"></i> 8. Дети</div>
+                    <p>Сервис не предназначен для лиц младше 13 лет.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-exchange-alt"></i> 9. Изменения в Политике конфиденциальности</div>
-                    <p>Мы можем время от времени обновлять нашу Политику конфиденциальности по мере внедрения новых функций. Мы уведомим вас о любых изменениях, разместив новую Политику конфиденциальности на этой странице и обновив дату последнего обновления. Изменения вступают в силу немедленно после публикации.</p>
+                    <div class="section-title"><i class="fas fa-exchange-alt" aria-hidden="true"></i> 9. Изменения</div>
+                    <p>Мы можем обновлять Политику конфиденциальности. Изменения публикуются на этой странице.</p>
                 </div>
 
                 <div class="section">
-                    <div class="section-title"><i class="fas fa-envelope"></i> 10. Свяжитесь с нами</div>
-                    <p>Если у вас есть вопросы об этой Политике конфиденциальности, рекламе, подписках или вы хотите запросить удаление вашей учетной записи и данных, свяжитесь с нами:</p>
+                    <div class="section-title"><i class="fas fa-envelope" aria-hidden="true"></i> 10. Контакты</div>
                     <div class="contact-card">
-                        <div><i class="fas fa-user"></i> <strong>Разработчик:</strong> Abdiganikadirov</div>
-                        <div><i class="fas fa-envelope"></i> <strong>Email:</strong> safemediaosupport@gmail.com</div>
-                        <div><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> Ош, Кыргызстан</div>
+                        <div><strong>Разработчик:</strong> Abdiganikadirov</div>
+                        <div><strong>Email:</strong> safemediaosupport@gmail.com</div>
+                        <div><strong>Адрес:</strong> Ош, Кыргызстан</div>
                     </div>
                     <div class="text-center" style="margin-top: 1rem;">
-                        <a href="mailto:safemediaosupport@gmail.com" class="email-delete-btn" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
-                            <i class="fas fa-paper-plane"></i> Отправить нам Email
+                        <a href="mailto:safemediaosupport@gmail.com" class="email-delete-btn" style="background: linear-gradient(135deg, #3b82f6, #2563eb);" target="_blank" rel="noopener noreferrer" title="Написать нам">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Написать нам
                         </a>
                     </div>
                 </div>
@@ -567,92 +550,94 @@
     <footer class="footer">
         <p>© 2026 Привычки Pro — All rights reserved. Your privacy is our priority.</p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem;">
-            <i class="fas fa-shield-alt"></i> Fully compliant with Google Play Console requirements
+            <i class="fas fa-shield-alt" aria-hidden="true"></i> Fully compliant with Google Play Console requirements
         </p>
     </footer>
 
     <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-        const themeIcon = themeToggle.querySelector('i');
+        (function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            const themeIcon = themeToggle.querySelector('i');
 
-        function setTheme(theme) {
-            if (theme === 'dark') {
-                body.classList.remove('light-theme');
-                body.classList.add('dark-theme');
-                localStorage.setItem('preferredTheme', 'dark');
-                themeIcon.className = 'fas fa-sun';
-            } else {
-                body.classList.remove('dark-theme');
-                body.classList.add('light-theme');
-                localStorage.setItem('preferredTheme', 'light');
-                themeIcon.className = 'fas fa-moon';
+            function setTheme(theme) {
+                if (theme === 'dark') {
+                    body.classList.remove('light-theme');
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('preferredTheme', 'dark');
+                    themeIcon.className = 'fas fa-sun';
+                } else {
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                    localStorage.setItem('preferredTheme', 'light');
+                    themeIcon.className = 'fas fa-moon';
+                }
             }
-        }
 
-        const savedTheme = localStorage.getItem('preferredTheme');
-        if (savedTheme === 'dark') {
-            setTheme('dark');
-        } else if (savedTheme === 'light') {
-            setTheme('light');
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
-        } else {
-            setTheme('light');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            if (body.classList.contains('light-theme')) {
+            const savedTheme = localStorage.getItem('preferredTheme');
+            if (savedTheme === 'dark') {
+                setTheme('dark');
+            } else if (savedTheme === 'light') {
+                setTheme('light');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 setTheme('dark');
             } else {
                 setTheme('light');
             }
-        });
 
-        const enContent = document.getElementById('en-content');
-        const ruContent = document.getElementById('ru-content');
-        const heroTitle = document.getElementById('heroTitle');
-        const lastUpdatedSpan = document.getElementById('lastUpdatedText');
-        const langBtns = document.querySelectorAll('.lang-btn');
-
-        function setLanguage(lang) {
-            if (lang === 'en') {
-                enContent.style.display = 'block';
-                ruContent.style.display = 'none';
-                heroTitle.textContent = 'Privacy Policy';
-                lastUpdatedSpan.innerHTML = 'Last Updated: May 15, 2026';
-                document.title = 'Privacy Policy | Привычки Pro';
-            } else {
-                enContent.style.display = 'none';
-                ruContent.style.display = 'block';
-                heroTitle.textContent = 'Политика конфиденциальности';
-                lastUpdatedSpan.innerHTML = 'Последнее обновление: 15 мая 2026 г.';
-                document.title = 'Политика конфиденциальности | Привычки Pro';
-            }
-            langBtns.forEach(btn => {
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
+            themeToggle.addEventListener('click', function() {
+                if (body.classList.contains('light-theme')) {
+                    setTheme('dark');
                 } else {
-                    btn.classList.remove('active');
+                    setTheme('light');
                 }
             });
-            localStorage.setItem('preferredLanguage', lang);
-        }
 
-        const savedLang = localStorage.getItem('preferredLanguage');
-        if (savedLang === 'ru') {
-            setLanguage('ru');
-        } else {
-            setLanguage('en');
-        }
+            const enContent = document.getElementById('en-content');
+            const ruContent = document.getElementById('ru-content');
+            const heroTitle = document.getElementById('heroTitle');
+            const lastUpdatedSpan = document.getElementById('lastUpdatedText');
+            const langBtns = document.querySelectorAll('.lang-btn');
 
-        langBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const lang = btn.getAttribute('data-lang');
-                if (lang === 'en') setLanguage('en');
-                if (lang === 'ru') setLanguage('ru');
+            function setLanguage(lang) {
+                if (lang === 'en') {
+                    enContent.style.display = 'block';
+                    ruContent.style.display = 'none';
+                    heroTitle.textContent = 'Privacy Policy';
+                    lastUpdatedSpan.innerHTML = 'Last Updated: May 15, 2026';
+                    document.title = 'Privacy Policy | Привычки Pro';
+                } else {
+                    enContent.style.display = 'none';
+                    ruContent.style.display = 'block';
+                    heroTitle.textContent = 'Политика конфиденциальности';
+                    lastUpdatedSpan.innerHTML = 'Последнее обновление: 15 мая 2026 г.';
+                    document.title = 'Политика конфиденциальности | Привычки Pro';
+                }
+                langBtns.forEach(function(btn) {
+                    if (btn.getAttribute('data-lang') === lang) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                localStorage.setItem('preferredLanguage', lang);
+            }
+
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang === 'ru') {
+                setLanguage('ru');
+            } else {
+                setLanguage('en');
+            }
+
+            langBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    const lang = btn.getAttribute('data-lang');
+                    if (lang === 'en') setLanguage('en');
+                    if (lang === 'ru') setLanguage('ru');
+                });
             });
-        });
+        })();
     </script>
 </body>
 </html>
